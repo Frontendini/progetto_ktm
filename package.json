@@ -1,0 +1,16 @@
+{
+  "name": "ktm",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "init": "npm install && npm run dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.1"
+  }
+}

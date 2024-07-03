@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-nav {
+  text-shadow: -2px 0px 0px #FF0000, 2px 0px 0px #00D6FF;
+}
+
