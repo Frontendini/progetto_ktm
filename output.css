@@ -663,8 +663,21 @@ video {
   inset: -0.25rem;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .isolate {
@@ -722,6 +735,11 @@ video {
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.mx-96 {
+  margin-left: 24rem;
+  margin-right: 24rem;
 }
 
 .my-12 {
@@ -1833,6 +1851,10 @@ video {
   background-color: transparent;
 }
 
+.bg-\[url\(\'\/media\/TV_Shows\.jpeg\'\)\] {
+  background-image: url('/media/TV_Shows.jpeg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1941,6 +1963,11 @@ video {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-1 {
@@ -2095,6 +2122,10 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-\[\#00A9C9\] {
@@ -2491,7 +2522,7 @@ video {
 }
 
 .shadow-nav {
-  text-shadow: -2px 0px 0px #FF0000, 1.5px 0px 0px #00D6FF;
+  text-shadow: -2px 0px 0px #FF0000, 2px 0px 0px #00D6FF;
 }
 
 @media (min-width: 640px) {
