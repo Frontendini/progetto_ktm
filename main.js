@@ -1,24 +1,19 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+const url = "https://api.themoviedb.org/3/movie/top_rated"
+const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWI1MDRiY2JhN2IwOTgwMWIwNWIyMzRkYWQyOTMwYSIsIm5iZiI6MTcyMDU0NTQyNC4yMTc5NTEsInN1YiI6IjY2ODQ0ZTJjYTFmZDA2YmQ5NzAyM2U2MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HhAwlXi8V2MiggYmTmvvrvR2s1B2hemiOeZDIqlQN6c"
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+fetch(url, { method: "GET", headers: { Authorization: `bearer ${token}` } })
+  .then((response) => response.json())
+  .then((data) => {
 
-setupCounter(document.querySelector('#counter'))
+    data.results.forEach((movie) => {
+      document.querySelector('#libreria').innerHTML +=
+
+        `
+            <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="p-5 rounded-lg">
+            `
+
+    });
+
+  });
+
+
