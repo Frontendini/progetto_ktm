@@ -21,13 +21,13 @@
   outline: none;
   border-radius: 25px;
   transition: all .5s ease-in-out;
-  background-color: #e64334;
+  background-color: black;
   padding-right: 40px;
-  color:#fff;
+  color:white;
 }
 .input-search::placeholder{
-  color:rgba(255,255,255,.5);
-  font-size: 18px;
+  color: white;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
@@ -42,7 +42,7 @@
   border-radius: 50%;
   position: absolute;
   right: 0px;
-  color:#ffffff ;
+  color:#e64334 ;
   background-color:transparent;
   pointer-events: painted;  
 }

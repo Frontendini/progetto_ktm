@@ -675,6 +675,10 @@ video {
   isolation: auto;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -834,6 +838,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -1833,6 +1841,11 @@ video {
   background-color: transparent;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/media\/TV_Shows\.jpeg\'\)\] {
   background-image: url('/media/TV_Shows.jpeg');
 }
@@ -2533,21 +2546,21 @@ video {
   outline: none;
   border-radius: 25px;
   transition: all .5s ease-in-out;
-  background-color: #e64334;
+  background-color: black;
   padding-right: 40px;
-  color:#fff;
+  color:white;
 }
 
 .input-search::-moz-placeholder{
-  color:rgba(255,255,255,.5);
-  font-size: 18px;
+  color: white;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
 .input-search::placeholder{
-  color:rgba(255,255,255,.5);
-  font-size: 18px;
+  color: white;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 100;
 }
@@ -2563,7 +2576,7 @@ video {
   border-radius: 50%;
   position: absolute;
   right: 0px;
-  color:#ffffff ;
+  color:#e64334 ;
   background-color:transparent;
   pointer-events: painted;
 }
