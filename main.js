@@ -9,7 +9,8 @@ fetch(url, { method: "GET", headers: { Authorization: `bearer ${token}` } })
       document.querySelector('#libreria').innerHTML +=
 
         `
-            <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="p-5 rounded-lg">
+        
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="rounded-xl duration-300 hover:border-2 hover:border-orange-500 hover:opacity-50">
             `
 
     });
